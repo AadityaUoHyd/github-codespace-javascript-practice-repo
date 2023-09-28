@@ -1,2 +1,2 @@
 # github-codespace-javascript-practice-repo
-exploring codespace of github, with javascript codes
+Exploring writing code in codespace of github, with various technical stack. e.g. - javascript, java, etc.
