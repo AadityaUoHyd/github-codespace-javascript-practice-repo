@@ -34,7 +34,7 @@ html {
   
   #subt {
     background-color: #161616;
-    color: #ffffff;
+    color: #c1ef58;
     width: 200px;
     height: 50px;
     border-radius: 10px;
@@ -81,6 +81,10 @@ html {
     background-color: #474747;
     color: #fff;
     font-size: 25px;
+  }
+
+  .resultParas{
+    color: #edb1df;
   }
   
   h1 {

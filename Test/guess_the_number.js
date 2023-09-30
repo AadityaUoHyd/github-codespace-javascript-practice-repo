@@ -33,9 +33,10 @@ function validateGuess(guess) {
     alert('Kindly enter a number less than 100');
   } else {
     prevGuess.push(guess);
-    if (numGuess === 11) {
+    if (numGuess === 10) {
+      checkGuess(guess);
       displayGuess(guess);
-      displayMessage(`Game Over. Random number was ${randomNumber}`);
+      displayMessage(`Game Over. Random number was ${randomNumber}.`);
       endGame();
     } else {
       displayGuess(guess);
@@ -49,9 +50,9 @@ function checkGuess(guess) {
     displayMessage(`Congratulations! You guessed it correct.`);
     endGame();
   } else if (guess < randomNumber) {
-    displayMessage(`Oh man! You guessed too much low`);
+    displayMessage(`Oh man! You guessed it too much low.`);
   } else if (guess > randomNumber) {
-    displayMessage(`Oh man! You guessed too much High`);
+    displayMessage(`Oh man! You guessed it too much High.`);
   }
 }
 
@@ -86,7 +87,7 @@ function newGame() {
     remaining.innerHTML = `${11 - numGuess} `;
     userInput.removeAttribute('disabled');
     startOver.removeChild(p);
-
+    lowOrHi.innerHTML="";
     playGame = true;
   });
 }
